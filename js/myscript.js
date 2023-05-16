@@ -9,15 +9,27 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 
 
 
-for (let i = 0; index < 100; i++){
+for (let i = 0; i < 100; i++){
+
+    console.log(1);
+
+
+    let result;
 
     if(i % 3 === 0){
         //Fizz
+    result = Fizz;
 
     }else if (i % 5 === 0){
         //Buzz
+    
+        result = Buzz;
 
     }else if (i % 3 === 0 || i % 5 === 0){
         //buzzfizz
+
+        result = FizzBuzz;
     }
+
+    console.log(i);
 }
