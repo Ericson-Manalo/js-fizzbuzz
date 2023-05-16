@@ -5,14 +5,17 @@ ul li{
 
 .green{
     color: white;
-    background-color: green;
+    background: linear-gradient(to right, #B5D43C, #ECFF9F);
+    width: 20%;
 }
 
 .red{
     color: white;
     background-color: rgb(229, 46, 46);
+    width: 20%;
 }
 
 .yellow{
-    background-color: yellow;
+    background: linear-gradient(to right, #F4A261, #ecf70f);
+    width: 20%;
 }
