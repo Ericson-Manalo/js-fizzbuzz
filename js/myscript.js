@@ -7,26 +7,29 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. */
 
-const liElement = document.querySelector('ul');
+const ulElement = document.querySelector('ul');
 
-for (let i = 0; i < 100; i++){
+for (let i = 0 ; i <= 100; i++){
 
-    const li = document.createElement('li');
+    const liElement = document.createElement('li');
     liElement.innerHTML = i;
 
     ulElement.appendChild(liElement);
 
-
     let result;
 
     if(i % 3 === 0){
-        
+
+    console.log("Fizz");
 
     }else if(i % 5 === 0){
         
+        console.log("Buzz");
 
 
     }else if (i % 3 === 0 && i % 5 === 0){
+
+        console.log("FizzBuzz");
         
 
     }else{
