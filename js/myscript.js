@@ -9,7 +9,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 
 const ulElement = document.querySelector('ul');
 
-for (let i = 0 ; i <= 100; i++){
+for (let i = 1 ; i <= 100; i++){
 
     const liElement = document.createElement('li');
     liElement.innerHTML = i;
@@ -19,12 +19,15 @@ for (let i = 0 ; i <= 100; i++){
 
     if(i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz");
+        liElement.innerHTML = "FizzBuzz";
 
     }else if(i % 3 === 0){
         console.log("Fizz");
+        liElement.innerHTML = "Fizz";
 
     }else if (i % 5 === 0){
         console.log("Buzz");
+        liElement.innerHTML = "Buzz";
 
     }else{
         console.log(i);
